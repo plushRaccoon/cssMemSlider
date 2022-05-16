@@ -8,50 +8,46 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Let's have fun!</h1>
-      <div class="header_icon"></div>
-    </header>
     <main>
-      <section class="main_memes">
-				<figure class="memes mem1">
-					<figcaption>What is guilt?</figcaption>
-				</figure>
-				<figure class="memes mem2">
-					<figcaption>I need help!</figcaption>
-				</figure>
-				<figure class="memes mem3">
-					<figcaption>Every hunter wants to know...</figcaption>
-				</figure>
-				<figure class="memes mem4">
-					<figcaption>Deadline</figcaption>
-				</figure>
-				<figure class="memes mem5">
-					<figcaption>First rule of a perfectionist</figcaption>
-				</figure>
-			</section>
-			<section class="main_controls">
-				<input type="radio" class="controls" name="controls" id="controls_1" checked autofocus>
-				<label for="controls_1"></label>
-				<input type="radio" class="controls" name="controls" id="controls_2">
-				<label for="controls_2"></label>
-				<input type="radio" class="controls" name="controls" id="controls_3">
-				<label for="controls_3"></label>
-				<input type="radio" class="controls" name="controls" id="controls_4">
-				<label for="controls_4"></label>
-				<input type="radio" class="controls" name="controls" id="controls_5">
-				<label for="controls_5"></label>
-			</section>
-    </main>
-    <footer>
-			<div class="footer__git-logo">
-				<p>©</p>
-				<time datetime="2022">2022</time>
-				<a href="https://github.com/zefkapuh" title="github: Iryna Pliakhanava"><img src="./assets/github-icon.svg" alt="github"></a>
+			<div class="slider middle">
+				<div class="slides">
+					<input type="radio" name="r" id="r1" checked>
+					<input type="radio" name="r" id="r2">
+					<input type="radio" name="r" id="r3">
+					<input type="radio" name="r" id="r4">
+
+					<div class="mem">
+						<div class="slide j1"><img src="./assets/mem1.jpg" alt="mem"></div>
+					<div class="slide"><img src="./assets/mem2.jpg" alt="mem"></div>
+					<div class="slide"><img src="./assets/mem4.jpg" alt="mem"></div>
+					<div class="slide"><img src="./assets/mem5.jpg" alt="mem"></div>
+					</div>
+					
+					<div class="description">
+						<h4 class="text f1">What is guilt?</h4>
+						<h4 class="text f2">I need help!</h4>
+						<h4 class="text">Deadline</h4>
+						<h4 class="text">The first rule of a perfectionist</h4>
+					</div>
+
+					<div class="controls">
+						<label for="r1" class="bar"><span></span></label>
+						<label for="r2" class="bar"><span></span></label>
+						<label for="r3" class="bar"><span></span></label>
+						<label for="r4" class="bar"><span></span></label>
+					</div>
+				</div>
+				
 			</div>
-			<div class="footer__rs-logo"></div>
-		</footer>
+      
+    </main>
   </body>
 </html>
